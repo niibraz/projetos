@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Poppins:wght@500&display=swap');
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+:root{
+    --cor0:#08A4BD;
+    --cor1:#5438DC;
+    --cor2:#1B1F22;
+    --cor3:#272D2D;
+    --cor4:#EDF2F4;
+    --cor5:#FFFCFF;
+
+    --fonte-padrao: 'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Navbar*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: var(--fonte-padrao);
+    margin-top: 0;
+    align-items: center;
+    color: var(--cor2);
+    background-color: var(--cor5);
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(136, 136, 136, 0.25);
+}
+.logo{
+    font-weight: 600;
+    font-size: 20px;
+}
+.nav-itens{
+    list-style: none;
+    display: flex;
+}
+.nav-itens>li>a{
+    padding-left: 20px;
+    color: var(--cor2);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/*Hey , I'm developer*/
+.hey{
+    margin: 80px 20px 0px 50px;
+    font-family: var(--fonte-padrao);
+    font-size: 25px;
+}
+.hey>p{
+    font-size:18px;
+}
+#front{ 
+    color: var(--cor1);
+}
+/* Localização e exp. */
+.loc-exp{
+    list-style: none;
+    display: flex;
+}
+.loc-exp>li{
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+    color: var(--cor2);
+    text-decoration: none;
+    font-weight: 500;
+}
+#h-ico{
+    height: 24px;
+    margin-right: 15px;
+}
