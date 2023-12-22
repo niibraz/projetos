@@ -3,6 +3,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Poppins:wght@500&display=swap');
 /* font-family: 'Lato', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
+
+
+@media only screen and (max-width: 1207px) {
+    h1 {
+        font-size: 37px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para dispositivos com largura de tela entre 768 e 959 pixels */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    h1 {
+        font-size: 35px;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+/* Estilos para dispositivos com largura de tela até 767 pixels */
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+
 :root{
     --cor0:#08A4BD;
     --cor1:#5438DC;
@@ -48,30 +80,15 @@ nav{
 
 /*Hey , I'm developer*/
 .hey{
-    margin: 80px 20px 0px 50px;
+    margin: 80px 50px 0px 50px;
     font-family: var(--fonte-padrao);
-    font-size: 25px;
 }
-.hey>p{
-    font-size:18px;
+.apresentacao{
+    text-align:left ;
+    width: 600px;
 }
-#front{ 
-    color: var(--cor1);
+
+.imagem01{
+    background-image: url(media/5599220.jpg);
 }
-/* Localização e exp. */
-.loc-exp{
-    list-style: none;
-    display: flex;
-}
-.loc-exp>li{
-    padding-top: 10px;
-    padding-left: 20px;
-    font-size: 18px;
-    color: var(--cor2);
-    text-decoration: none;
-    font-weight: 500;
-}
-#h-ico{
-    height: 24px;
-    margin-right: 15px;
-}
+
