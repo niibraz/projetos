@@ -7,31 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul class="ho-co">
-            <li id="hoco-itens">Home</li>
-            <li id="hoco-itens">Contact</li>
-        </ul>
+    <nav>
+        <div class="logo">logo</div>
+        <div class="links">
+            <ul class="nav-itens">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <div class="apresentation">
         <h1 class="apres-iten1">Hey, Welcome!</h1>
         <div class="detail"></div>
-        <h3 class="apres-iten2">Lets create a new accont!</h3>
+        <h3 class="apres-iten2">Create a new accont!</h3>
     </div>
 
-    <div class="login">
-        <h3 class="login-iten1">Do you have a accont?</h3>
-        <button class="login-iten2">Login Here</button>
+    <div class="input-group">
+        <div class="input-box">
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+        </div>
+        <div class="input-box">
+            <input type="email" name="email" id="email" placeholder="Your Name" required>
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" id="password" placeholder="Your Password" required>
+        </div>
+        <div class="input-box">
+            <input type="password" name="password" id="confirmpassword" placeholder="Confirm Password" required>
+        </div>
     </div>
 
-    <div class="register">
-        <section>
-            <input type="text">
-            <input type="text">
-            <input type="email">
-            <input type="password">
-        </section>
-    </div>
 </body>
 </html>
