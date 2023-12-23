@@ -1,0 +1,80 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Poppins:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Courgette&family=Lato&family=Poppins:wght@500&display=swap');
+/* 'Lato', sans-serif; */
+
+:root{
+    --cor1:#E8F1F2;
+    --cor2:#273E47;
+    --cor3:#A4243B;
+    --cor4:#1D2E35;
+
+    --fonte-principal: 'Poppins', sans-serif;
+    --fonte-indicadore: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1D2E35;
+}
+
+/* navbar */
+.navbar{
+    padding: 20px;
+}
+.ho-co{
+    list-style: none;
+    display: flex;
+    margin-left: 25px;
+}
+#hoco-itens{
+    font-family: var(--fonte-principal);
+    font-size: 18px;
+    color: #E8F1F2;
+    margin-left: 25px;
+}
+
+/* hey, welcome */
+.apresentation{
+    padding: 25px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: #E8F1F2;
+    letter-spacing: 1px;
+}
+.detail{
+    background-color: #A4243B;
+    width: 150px;
+    position: absolute;
+    left: 310px;
+    border-radius: 25px;
+    height: 15px;
+}
+.apres-iten2{
+    padding-top: 30px;
+}
+
+/* login */
+.login{
+    padding: 50px;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    color: #E8F1F2;
+}
+.login-item1{
+    letter-spacing: 2px;
+}
+.login-iten2{
+    font-family: var(--fonte-principal);
+    border-radius: 25px;
+    border: none;
+    margin-top: 20px;
+    padding: 20px 50px 20px 50px;
+    color: #E8F1F2;
+    background-color: #A4243B;
+    font-size: 18px;
+}
