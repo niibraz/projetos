@@ -12,6 +12,9 @@
     p {
         font-size: 18px;
     }
+    .apresentacao{
+        width: 600px;
+    }
 }
 
 /* Estilos para dispositivos com largura de tela entre 768 e 959 pixels */
@@ -21,6 +24,9 @@
     }
     p {
         font-size: 18px;
+    }
+    .apresentacao{
+        width: 500px;
     }
 }
 
@@ -32,8 +38,10 @@
     p {
         font-size: 15px;
     }
+    .apresentacao{
+        width: 400px;
+    }
 }
-
 
 :root{
     --cor0:#08A4BD;
@@ -93,24 +101,6 @@ nav{
 }
 .apresentacao{
     text-align:left ;
+    display: flex;
 }
 
-.texto{
-    font-family: var(--fonte-padrao);
-    margin: 80px 50px 0px 50px;
-}
-.imagens{
-    margin: 50px 20px 50px 50px;
-    display: flex;
-    justify-content:space-around ;
-}
-#img{
-    background-color: var(--cor5);
-    box-shadow: 2px 2px 4px #00000021 ;
-    border-radius: 25px;
-    width: 200px;
-    height: 200px;
-}
-.texto>p{
-    margin-top: 25px
-}
