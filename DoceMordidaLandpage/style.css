@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #EAEAEA;
 }
 
 :root{
@@ -21,20 +22,24 @@
 
 /*Navbar*/
 nav {
-    padding: 20px;
+    padding: 1.25em;
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins';
     align-items: center;
     background-color: #EAEAEA;
     color: #251605;
+    box-shadow: 0px 2px 5px rgb(209, 209, 209);
 }
 
 .logo{
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1.56em;
 }
-.logo:hover
+.logo:hover{
+    color: #EDB6A3;
+    transition: 0.5s;
+}
 
 
 .nav_itens{
@@ -45,10 +50,41 @@ nav {
 .nav_itens>li>a{
     text-decoration: none;
     color: #251605;
-    padding-left: 28px;
+    padding-left: 1.80em;
     font-weight: 500;
 }
 .nav_itens>li>a:hover{
     color: var(--lilas);
+    transition: 0.5s;
+}
+
+.apresentation{
+    text-align: center;
+    padding-top: 2.98em;
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+.botoes{
+    position: relative;
+    padding-top: 10em;
+}
+.botoes_child{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.botoes_child>button{
+    padding: 2em 3em;
+    font-family: 'Poppins';
+    font-size: 0.8em;
+    font-weight: 600;
+    background-color: #A98FB7;
+    border-radius: 14px;
+    border: none;
+}
+.botoes_child>button:hover{
+    background-color:#EDB6A3;
+    transform: scale(95%);
     transition: 0.5s;
 }
