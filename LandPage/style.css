@@ -18,7 +18,7 @@ nav{
     color: #EDF2F4;
     justify-content: space-around;
     align-items: center;
-    padding: 2em 3em;
+    padding: 1.4em 3em;
     background-color: #141414;
     
 }
@@ -68,18 +68,81 @@ nav a{
     margin: 0 auto;
 }
 main{
+    color: #EDF2F4;
     display: block;
-    background-color: #141414;
 }
+
+section.module>h1{
+    text-align: center;
+    background: transparent;
+    position: relative;
+    top: -1em;
+    font-size: 3em;
+    text-shadow: #141414 -7px 7px 12px;
+}
+
 .container{
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 50px 20px;
+}
+section.module.content{
+    padding: 40px 0;
+    background: #141414;
+}
+section.module p{
+    margin-bottom: 1.4em;
 }
 
+section.module h2{
+    margin-bottom: 0.8em;
+}
 
+section.module:last-child{
+    margin-bottom: 0;
+}
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover; 
+}
 
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
 
+section.module.parallax-1{
+    background-image: url(midias/wes-tindel-TCXGFN4kW9I-unsplash.jpg);
+}
 
-
+section.module.parallax-2{
+    background-image: url(midias/wes-tindel-Yt0z0XOamFQ-unsplash.jpg);
+}
+section.module.parallax-3{
+    background-image: url(midias/adam-kenton-UlfLGl7TvcY-unsplash.jpg);
+}
+.container_plx2{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 50px 60px;
+    border-radius: 20px;
+    background-color: #141414;
+}
