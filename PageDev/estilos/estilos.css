@@ -1,0 +1,132 @@
+:root{
+    --branco:#EDF2F4;
+    --cinza:#BCB9B6;
+    --preto:#1F1F1F;
+    --cor_especial:#855DFD;
+
+    --fonte_padrao:'Lexend Deca', Sans-Serif;
+}
+
+body{
+    background-color: var(--preto);
+    height: 100vh;
+}
+
+/* Navbar e botao resume */
+.header_container{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:var(--preto);
+    backdrop-filter: blur(10px);
+    color:var(--branco);
+    font-family: var(--fonte_padrao);
+    align-items: center;
+    border-bottom: 0.5px solid rgba(62, 62, 62, 0.5);
+    z-index: 10;
+}
+.nav_container,
+.links_content{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    padding: 0 40px;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.links_content li a{
+    color: var(--branco);
+    padding: 0 20px;
+    font-weight: 500;
+}
+.btn_container{
+    padding: 0 40px;
+}
+.btn_content{
+    padding: 12px 40px;
+    border: 0.5px solid rgba(62, 62, 62, 0.5);
+    border-radius: 5px;
+    font-family: var(--fonte_padrao);
+    font-weight: 500;
+    color: var(--branco);
+    background-color: var(--preto);
+}
+.btn_content a{
+    font-size:15px;
+    color: var(--branco);
+}
+
+.logo:hover{
+    color: var(--cor_especial);
+    transition: 0.3s ease-in-out;
+}
+.links_content li a:hover{
+    color: var(--cor_especial);
+    transition: 0.3s ease-in-out;
+}
+.btn_content:hover{
+    background-color: var(--cor_especial); 
+    transition: 0.3s ease-in;
+}
+
+/* Apresentacao */
+.apresentation{
+    text-align: center;
+    color: var(--branco);
+    font-family: var(--fonte_padrao);
+    padding: 100px 50px;
+}
+.apresentation_text h2{
+    padding-bottom: 20px;
+    font-size: 3em;
+}
+.apresentation_text p {
+    padding: 0 170px;
+    font-size: 1.2em;
+    color: var(--cinza);
+}
+.apresentation_icons{
+    padding: 70px;
+}
+.apresentation_icons a{
+    color: var(--branco);
+    padding: 10px 15px;
+    margin:18px;
+    border: 3px solid var(--branco);
+    border-radius: 7px;
+    font-size: 2em;
+}
+
+.apresentation_icons a:hover{
+    background-color: #82828245;
+    transition: 0.5s;
+}
+
+/* Cards */
+
+.projects_title{
+    text-align: center;
+    color: var(--branco);
+    font-family: var(--fonte_padrao);
+    font-weight: 600;
+    font-size: 3em;
+    padding: 40px;
+}
+
+.projects_cards{
+    display: flex;
+} 
+.card_content img{
+    height: 80px;
+    width: 160px;
+}
+.card_content{
+    text-align: left;
+    padding: 20px 30px;
+    background-color: transparent;
+    border: 1px solid var(--cinza);
+    border: 0.5px solid rgba(62, 62, 62, 0.5);
+    border-radius: 20px;
+}
